@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Regular";
+  src: url("../fonts/Roboto-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url("../fonts/Roboto-Bold.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: $color-green;
+  font-family: "bold";
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
