@@ -1,0 +1,217 @@
+.calculation
+    z-index: -2
+    height: 71.9rem
+    background: linear-gradient(90deg, #FFF 26.51%, rgba(255, 255, 255, 0.00) 100%), url(../images/calculation-bg.webp)
+
+.calculation-wrap
+    position: relative
+    display: flex
+
+.calculation-left
+    &__title
+        font-size: 6rem
+        font-weight: 700
+        padding: 3rem 0
+    &__subtitle
+        font-size: 4.4rem
+        font-weight: 700
+        color: #000
+        margin-bottom: 6.4rem
+        span
+            border: .1rem solid $color-green
+            border-radius: 1rem
+            font-size: 6rem
+            font-weight: 700
+            color: #fff
+            background-color: $color-green
+            padding: 0 .5rem
+    &__content
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        grid-gap: 2.6rem 7.4rem
+        width: 46rem
+
+.calculation-card
+    &__img
+        position: relative
+        margin-bottom: .8rem
+        z-index: 1
+        &_ellipse1
+            left: 3.7rem
+            top: 0rem
+        &_ellipse2
+            left: 1.9rem
+            bottom: 1.2rem
+        &_ellipse3
+            left: 1.9rem
+            bottom: .7rem
+        &_ellipse4
+            left: 3.1rem
+            bottom: 2.3rem
+        img
+            width: 6rem
+            height: 6rem
+            margin-bottom: 1rem
+        svg
+            position: absolute
+            z-index: -1
+    &__text
+        font-size: 1.8rem
+        font-weight: 700
+
+.calculation-right
+    position: absolute
+    z-index: 1
+    width: 48.3rem
+    height: 69.5rem
+    padding: 3.8rem 2.4rem 4.2rem 4.5rem
+    background-color: #fff
+    border-radius: .7rem
+    right: 15rem
+    &__title
+        font-size: 2rem
+        font-weight: 900
+        max-width: 64.2rem
+        letter-spacing: -.1rem
+        text-transform: uppercase
+        margin-bottom: 2.8rem
+    &__line
+        width: 43.8rem
+        height: .1rem
+        background-color: #D6D6D6
+        margin-bottom: 2rem
+    &__sale
+        display: flex
+        position: relative
+        margin-bottom: 4rem
+    &__sale-left
+        margin-right: 9.4rem
+        p
+            font-size: 1.6rem
+            font-weight: 400
+            color: $color-blue
+        span
+            font-size: 1.8rem
+            font-weight: 700
+            color: $color-blue
+    &__sale-right
+        p
+            font-size: 1.6rem
+            font-weight: 400
+            color: $color-blue
+        span
+            font-size: 1.8rem
+            font-weight: 700
+            color: $color-blue
+    &__background
+        position: absolute
+        z-index: -1
+        bottom: 12.5rem
+        left: 0
+        background-color: $color-light-grey
+        width: 48.3rem
+        height: 7.6rem
+
+.calculation-form
+    &__text
+        font-size: 1.6rem
+        font-weight: 700
+        margin-bottom: 2rem
+        color: #595959
+    &__group
+        display: grid
+        grid-template-columns: 1fr 1fr 
+        gap: 1.1rem 3.7rem
+        margin-bottom: 2rem
+    &__group-radio
+        display: flex
+    &__input-radio
+        display: none
+    &__label-radio
+        font-size: 1.4rem
+        font-weight: 400
+        color: #595959
+        cursor: pointer
+        position: relative
+        padding-left: 2.5rem
+        &:hover
+            color: $color-blue
+    &__button-radio
+        width: 1.8rem
+        height: 1.8rem
+        border: .2rem solid #ccc
+        background-color: $color-light-grey
+        border-radius: 50%
+        position: absolute
+        left: 0
+        top: -.1rem
+        &::after
+            content: ""
+            display: block
+            width: .9rem
+            height: .9rem 
+            background: $color-blue
+            border-radius: 50%
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0           
+
+    &__input-radio:checked ~ &__label-radio &__button-radio::after
+        opacity: 1
+
+.form3
+    display: flex
+
+.calculation-range
+    &__wrap
+        display: flex
+        align-items: center
+        margin-bottom: 5rem
+        input
+            margin-right: 2rem
+            width: 32rem
+            color: $color-blue
+        label
+            font-size: 1.4rem
+            font-weight: 700
+            color: #595959
+
+.calculation-phone
+    input
+        max-width: 20.3rem
+        height: 4rem 
+        border-color: #ccc
+        margin-right: 1.5rem
+        &::placeholder
+            font-size: 1.4rem
+            font-weight: 400
+            color: #595959
+    button
+        font-size: 1.8rem
+        font-weight: 700
+        color: #fff
+        padding: 1.3rem 2.3rem
+        background-color: $color-green
+        border-color: $color-green
+        border-radius: .4rem
+    &__text
+        font-size: 1.6rem
+        font-weight: 700
+        color: #595959
+        margin-bottom: 1.7rem
+
+
+
+        
+        
+
+    
+
+            
+            
+                
+
+        
