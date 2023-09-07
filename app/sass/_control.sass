@@ -1,0 +1,41 @@
+.control
+    position: relative
+    img
+        position: absolute
+        width: 61rem
+        height: 35rem
+        left: 0
+        top: 19.5rem
+        z-index: -10
+    &__title
+        padding-top: 5.4rem
+        margin-bottom: 1.1rem
+        text-align: center
+    &__subtitle
+        font-size: 1.8rem
+        font-weight: 300
+        text-align: center
+        margin-bottom: 6rem
+    &__wrapper
+        display: grid
+        grid-template-rows: 1fr, 1fr
+        grid-template-columns: max-content(19.5rem 22.6rem 19rem) 
+        width: 60rem
+
+.control-item
+    &__number
+        font-size: 1.6rem
+        font-weight: 700
+        color: #D6D6D6
+        margin-bottom: 1rem
+        span
+            font-size: 3rem
+            font-weight: 700
+            color: $color-green
+    &__title
+        font-size: 1.8rem
+        font-weight: 700
+        margin-bottom: 3.3rem
+    &__text
+        font-size: 1.4rem
+        font-weight: 400
