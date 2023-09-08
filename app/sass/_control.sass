@@ -1,12 +1,11 @@
 .control
-    position: relative
     img
-        position: absolute
         width: 61rem
         height: 35rem
         left: 0
         top: 19.5rem
         z-index: -10
+        margin-right: 2.4rem
     &__title
         padding-top: 5.4rem
         margin-bottom: 1.1rem
@@ -19,8 +18,12 @@
     &__wrapper
         display: grid
         grid-template-rows: 1fr, 1fr
-        grid-template-columns: max-content(19.5rem 22.6rem 19rem) 
+        grid-template-columns: 19.5rem 22rem 19rem 
         width: 60rem
+        gap: 3.3rem 5.8rem
+    &__img
+        display: flex
+        padding-left: 15rem
 
 .control-item
     &__number
@@ -35,7 +38,7 @@
     &__title
         font-size: 1.8rem
         font-weight: 700
-        margin-bottom: 3.3rem
+        margin-bottom: 1.1rem
     &__text
         font-size: 1.4rem
         font-weight: 400
