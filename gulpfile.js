@@ -67,7 +67,7 @@ function sprite() {
 }
 
 function scripts() {
-  return src(["app/js/main.js"])
+  return src(["app/js/main.js", "app/js/accordeon.js"])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(dest("app/js"))

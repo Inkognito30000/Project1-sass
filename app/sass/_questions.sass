@@ -1,0 +1,81 @@
+.questions
+    margin-bottom: 9rem
+    &__title
+        margin-bottom: 2rem
+        text-align: center
+    &__text
+        font-size: 2.2rem
+        font-weight: 300
+        margin-bottom: 4rem
+        text-align: center
+
+.accordion
+    width: 110rem
+    margin-bottom: 6rem
+
+.accordion-item
+    font-size: 1.8rem
+    font-weight: 400 
+
+.accordion-title
+    position: relative
+    padding: 1.5rem 5.7rem
+    cursor: pointer
+    &::before
+        content: "+"
+        font-size: 5.6rem
+        font-weight: 400
+        color: #ccc
+        position: absolute
+        left: 0
+        top: -50%
+        transform: translateY(27%)
+
+.accordion-content
+    position: relative
+    border-top: .1rem solid $color-grey
+    width: 96rem
+    margin-left: 5.7rem
+    padding-top: 1rem
+    padding-bottom: 2rem
+    overflow: hidden
+    height: 0
+    transition: max-height 1s ease
+    
+.hidden
+    display: none
+
+.accordion-item.active .accordion-content
+    max-height: 20rem
+
+.consultation
+    height: 10.3rem
+    position: absolute
+    display: flex
+    align-items: center
+    color: #fff
+    font-weight: 500
+    &__subtitle
+        font-size: 2.2rem
+        line-height: 2.6rem
+        margin-right: 7.7rem
+    &__content
+        font-size: 1.6rem
+        max-width: 57rem
+        margin-right: 12rem
+    &__btn
+        font-size: 1.4rem
+        font-weight: 400
+        text-transform: uppercase
+        padding: 1.6rem 3.7rem
+        border: .2rem solid #fff
+        border-radius: 3.1rem
+        color: #fff
+        background-color: $color-green
+
+.consultation-bg
+    position: relative
+    z-index: -10
+    width: 100vw
+    height: 10.3rem
+    background-color: $color-green
