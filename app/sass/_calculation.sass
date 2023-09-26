@@ -1,22 +1,35 @@
 .calculation
-    z-index: -2
     height: 71.9rem
     background: linear-gradient(90deg, #FFF 26.51%, rgba(255, 255, 255, 0.00) 100%), url(../images/calculation-bg.webp)
     margin-bottom: 7.3rem
+    @media only screen and (max-width : 768px)
+        width: 100%
+        background: linear-gradient(90deg, #FFF 26.64%, rgba(255, 255, 255, 0.00) 99.61%), url(../images/calculation-bg.webp)
+        height: 68.7rem
+        margin-bottom: 65rem
 .calculation-wrap
     position: relative
     display: flex
+    @media only screen and (max-width : 768px)
+        position: static
+        display: block
 
 .calculation-left
     &__title
         font-size: 6rem
         font-weight: 700
         padding: 3rem 0
+        @media only screen and (max-width : 768px)
+            font-size: 5.2rem
+            padding-bottom: 1.3rem
     &__subtitle
         font-size: 4.4rem
         font-weight: 700
         color: #000
         margin-bottom: 6.4rem
+        @media only screen and (max-width : 768px)
+            font-size: 3rem
+            margin-bottom: 3.2rem
         span
             border: .1rem solid $color-green
             border-radius: 1rem
@@ -25,6 +38,8 @@
             color: #fff
             background-color: $color-green
             padding: 0 .5rem
+            @media only screen and (max-width : 768px)
+                font-size: 5.2rem
     &__content
         display: grid
         grid-template-columns: 1fr 1fr
@@ -69,6 +84,11 @@
     background-color: #fff
     border-radius: .7rem
     right: 15rem
+    @media only screen and (max-width : 768px)
+        width: 100%
+        position: static
+        height: 57.2rem
+        padding: 3.6rem 3.8rem 6rem 3rem
     &__title
         font-size: 2rem
         font-weight: 900
@@ -76,6 +96,9 @@
         letter-spacing: -.1rem
         text-transform: uppercase
         margin-bottom: 2.8rem
+        @media only screen and (max-width : 768px)
+            font-size: 2.2rem
+            max-width: 35.5rem
     &__line
         width: 43.8rem
         height: .1rem
@@ -124,6 +147,9 @@
         grid-template-columns: 1fr 1fr 
         gap: 1.1rem 3.7rem
         margin-bottom: 2rem
+        @media only screen and (max-width : 768px)
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 1.1rem 1.7rem
     &__group-radio
         display: flex
     &__input-radio

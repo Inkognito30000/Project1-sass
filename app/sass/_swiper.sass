@@ -11,6 +11,9 @@
     &__buttons
         margin-right: 0.4rem
         margin-bottom: 3.4rem
+        @media only screen and (max-width : 768px)
+            display: flex
+            margin-bottom: 2.7rem
         &:last-child
             margin-right: 0rem
         button
@@ -23,6 +26,10 @@
             border-radius: .4rem
             border: none
             cursor: pointer
+            @media only screen and (max-width : 768px)
+                max-width: 14.5rem
+                padding: 1.4rem 1.2rem
+                margin-right: 1.6rem
             &:hover
                 color: #fff
                 background-color: $color-blue
@@ -36,6 +43,8 @@
         display: flex
         justify-content: center
         margin-bottom: 3.2rem
+        @media only screen and (max-width : 768px)
+            margin-bottom: 2.6rem
 
 .examples-form
     &__group-radio
