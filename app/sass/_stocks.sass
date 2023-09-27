@@ -2,6 +2,8 @@
     &__title
         margin-bottom: 4.6rem
         text-align: center
+        @media only screen and (max-width : 768px)
+            display: none
     &__wrapper
         display: flex
         margin-bottom: 2.5rem
@@ -54,9 +56,11 @@
     &__text
         font-size: 1.8rem
         font-weight: 300
-        width: 77.3rem
+        max-width: 77.3rem
         text-align: center
         margin-bottom: 7rem
+        @media only screen and (max-width : 768px)
+            max-width: 64rem
     &__wrapper
         display: flex
     &__wrapper-svg
